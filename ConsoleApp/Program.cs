@@ -31,9 +31,9 @@ namespace ConsoleApp
                 var eventType = Console.ReadLine();
 
                 message = string.IsNullOrWhiteSpace(message) ? "This is an automated message" : message;
-                eventType = string.IsNullOrWhiteSpace(eventType) ? "MyCompany.Items.NewItemCreated" : message;
+                eventType = string.IsNullOrWhiteSpace(eventType) ? "MyCompany.Items.NewItemCreated" : eventType;
                 var eventOne = new EventGridEvent(
-                    "ExampleEventSubject",
+                    "Azure.Associate.Training",
                     eventType,
                     "1.0",
                     message);
